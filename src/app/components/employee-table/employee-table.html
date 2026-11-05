@@ -7,7 +7,7 @@
     </tr>
   </thead>
   <tbody>
-    @for (employee of sortedEmployees(); track employee.name) {
+    @for (employee of employees(); track employee.name) {
       <tr [class.low-hours]="isLowHours(employee)">
         <td class="name">{{ employee.name }}</td>
         <td>{{ employee.totalHours | number: '1.0-0' }} hrs</td>

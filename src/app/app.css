@@ -13,3 +13,8 @@ h1 {
 .error {
   color: #b3261e;
 }
+
+h2 {
+  margin: 36px 0 16px;
+  font-size: 18px;
+}

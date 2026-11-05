@@ -6,6 +6,9 @@
   } @else if (loadFailed()) {
     <p class="error">The employee data could not be loaded. Please try again later.</p>
   } @else {
-    <app-employee-table [employees]="employees()" />
+    <app-employee-table [employees]="sortedEmployees()" />
+
+    <h2>Share of total time worked</h2>
+    <app-employee-chart [employees]="sortedEmployees()" />
   }
 </main>
