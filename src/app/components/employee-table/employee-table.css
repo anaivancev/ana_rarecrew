@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  padding: 10px 14px;
+  border: 1px solid #d9d9d9;
+  text-align: center;
+}
+
+th {
+  background-color: #e6e6e6;
+  font-weight: 600;
+}
+
+.name {
+  text-align: left;
+}
+
+.low-hours {
+  background-color: #f6ada0;
+}
+
+a {
+  color: #1a5fb4;
+}

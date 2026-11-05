@@ -1,0 +1,11 @@
+<main>
+  <h1>Employee hours</h1>
+
+  @if (loading()) {
+    <p>Loading...</p>
+  } @else if (loadFailed()) {
+    <p class="error">The employee data could not be loaded. Please try again later.</p>
+  } @else {
+    <app-employee-table [employees]="employees()" />
+  }
+</main>

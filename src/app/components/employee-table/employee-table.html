@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th class="name">Name</th>
+      <th>Total Time in Month</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (employee of sortedEmployees(); track employee.name) {
+      <tr [class.low-hours]="isLowHours(employee)">
+        <td class="name">{{ employee.name }}</td>
+        <td>{{ employee.totalHours | number: '1.0-0' }} hrs</td>
+        <td><a href="#" (click)="$event.preventDefault()">Edit</a></td>
+      </tr>
+    }
+  </tbody>
+</table>
